@@ -10,6 +10,10 @@ namespace Solution_7
     {
         static void Main(string[] args)
         {
+            // Why is all the logic in the Main() method. Should the logic be in a different class = -0.5 Mark
+
+            // Total = 9.5 Marks
+
             while (true)
             {
                 Console.Write("Please enter a number (number/quit) : ");

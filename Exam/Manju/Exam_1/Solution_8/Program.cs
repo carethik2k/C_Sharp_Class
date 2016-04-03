@@ -11,6 +11,16 @@ namespace Solution_8
     {
         static void Main(string[] args)
         {
+            //All of the logic is in the same class = -.5 Mark
+
+            //Looping is incorrect. If i enter a string, it should keep asking options till i quit once. 
+            // Right now it performs for example 'Length' and asks for next string. = -1 Mark
+            
+            // a = Char.Parse(Console.ReadLine()); This line results in an exception if i simply hit 'Enter' instead of entering a character.
+            //Always accept input and then try to do TryParse instead of parsing directly = -.5 Mark
+
+            // Total = 8 Marks
+
             string strInput,strInput1;
             char a;
             while (true)

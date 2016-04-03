@@ -10,6 +10,17 @@ namespace Solution_11
     {
         static void Main(string[] args)
         {
+            // Why is all the logic in the Main() method. Should the logic be in a different class = -0.5 Mark
+
+            //An exception is thrown if i simply hit 'Enter' instead of entering a number.
+            //Always accept input and then try to do TryParse instead of parsing directly = -.5 Mark
+
+            // logic to retry till the user enters 'quit' is missing =  -1 Mark
+
+            // All of these operations are available as Array functions. There is no need to implement them.
+
+            //Total = 8 Marks
+
             while (true)
             {
                 Console.Write("Please enter the number of elements in the array : ");

@@ -13,6 +13,17 @@ namespace Solution_10
     {
         static void Main(string[] args)
         {
+            //Why is all the logic in the Main() method. Should the logic be in a different class = -0.5 Mark
+
+            //Questions says accept a comma seperated string. You are accepting one at a time = -2 Marks
+
+            //An exception is thrown if i simply hit 'Enter' instead of entering a number.
+            //Always accept input and then try to do TryParse instead of parsing directly = -.5 Mark
+
+            //Output not in comma seperated format = -1 Mark
+
+            //Total = 6 Marks
+
             List<int> userList = new List<int>();
             while(true)
             { 

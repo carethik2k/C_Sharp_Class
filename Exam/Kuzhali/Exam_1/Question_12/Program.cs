@@ -10,6 +10,9 @@ namespace Question_12
     {
         static void Main(string[] args)
         {
+            //Logic is completely wrong.
+            //Total = 6 Marks (for the effort)
+
             CheckinService.Run();
         }
     }

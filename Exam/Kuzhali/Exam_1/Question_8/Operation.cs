@@ -10,6 +10,8 @@ namespace Question_8
 {
     public class Operation
     {
+        // Why are you using static methods and static variables ?
+        // Not a big deal, but you should've use static unless there is a reason.
         public static string input { get; set; }
         public static string action { get; set; }
         public static string s1 { get; set; }
@@ -27,6 +29,7 @@ namespace Question_8
                 }
                 else
                 {
+                    // I haven't asked in the question, but usually its a good practice to list the possible actions, so that the user will know them.
                     Console.Write("Action : ");
                     action = Console.ReadLine().ToUpper();
                     if ((action == "REVERSE") || (action == "LENGTH") || (action == "COUNTCHAR"))
