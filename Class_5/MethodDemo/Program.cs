@@ -1,4 +1,5 @@
 ﻿using System;
+using Common;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,12 +17,12 @@ namespace MethodDemo
             {
                 Console.WriteLine();
                 PrintString("Please enter a number: ");
-                var number = AcceptNumberInput(); //Int32.Parse(Console.ReadLine());
-
+                var number = Utility.AcceptNumberInput(); //Int32.Parse(Console.ReadLine());
+                
                 result += number;
 
                 PrintString("Enter 0 to Quit.");
-                var input = AcceptNumberInput(); //Int32.Parse(Console.ReadLine());
+                var input = Utility.AcceptNumberInput(); //Int32.Parse(Console.ReadLine());
                 if(input == 0)
                     break;
             }
@@ -30,22 +31,7 @@ namespace MethodDemo
             PrintString("Bye Bye !",true);
         }
 
-        static int AcceptNumberInput()
-        {
-            int numInput = 0;
-            while (true)
-            {
-                string strInput = Console.ReadLine();
-                var isSuccess = Int32.TryParse(strInput, out numInput);
-                if (isSuccess)
-                    break;
-                else
-                {
-                    Console.Write("\nValue entered is not a number. Please retry again: ");
-                }
-            }
-            return numInput;
-        }
+        
 
         /// <summary>
         /// This method can be used to print in a single line or in multiple lines
